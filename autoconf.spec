@@ -4,7 +4,7 @@
 #
 Name     : autoconf
 Version  : 2.69
-Release  : 21
+Release  : 22
 URL      : http://mirrors.kernel.org/gnu/autoconf/autoconf-2.69.tar.gz
 Source0  : http://mirrors.kernel.org/gnu/autoconf/autoconf-2.69.tar.gz
 Summary  : No detailed summary available
