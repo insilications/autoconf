@@ -1,7 +1,7 @@
 # This file contains recursive sources that require this package
 Linux-PAM
-PackageKit
 clr-power-tweaks
 filesystem
+gdb
 python
 thin-provisioning-tools
