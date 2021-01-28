@@ -5,7 +5,7 @@
 %define keepstatic 1
 Name     : autoconf
 Version  : 2.70
-Release  : 26
+Release  : 27
 URL      : file:///insilications/build/clearlinux/packages/autoconf/autoconf-v2.70.tar.gz
 Source0  : file:///insilications/build/clearlinux/packages/autoconf/autoconf-v2.70.tar.gz
 Summary  : No detailed summary available
@@ -15,7 +15,11 @@ Requires: autoconf-bin = %{version}-%{release}
 Requires: autoconf-data = %{version}-%{release}
 Requires: autoconf-info = %{version}-%{release}
 Requires: autoconf-man = %{version}-%{release}
+BuildRequires : autoconf
+BuildRequires : automake
+BuildRequires : buildreq-configure
 BuildRequires : emacs
+BuildRequires : git
 BuildRequires : grep
 BuildRequires : help2man
 BuildRequires : sed
@@ -74,7 +78,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1611864964
+export SOURCE_DATE_EPOCH=1611868223
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -126,7 +130,7 @@ export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 make %{?_smp_mflags} check || :
 
 %install
-export SOURCE_DATE_EPOCH=1611864964
+export SOURCE_DATE_EPOCH=1611868223
 rm -rf %{buildroot}
 %make_install
 ## Remove excluded files
