@@ -1,5 +1,5 @@
 PKG_NAME := autoconf
-URL = https://mirrors.kernel.org/gnu/autoconf/autoconf-2.70.tar.xz
+URL = https://git.savannah.gnu.org/git/autoconf.git
 ARCHIVES = 
 
 include ../common/Makefile.common
